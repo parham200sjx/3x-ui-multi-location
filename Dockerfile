@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # دانلود و نصب X-UI 2.9.6
-RUN curl -L https://github.com/sh7CBAC/Heimdall/releases/download/V2.9.6/x-ui-linux-amd64.tar.gz -o /tmp/x-ui.tar.gz \
+RUN curl -L https://github.com/mhsanaei/3x-ui/releases/download/v3.6.0/x-ui-linux-amd64.tar.gz -o /tmp/x-ui.tar.gz \
     && tar -xzf /tmp/x-ui.tar.gz -C /usr/local/ \
     && rm /tmp/x-ui.tar.gz \
     && chmod +x /usr/local/x-ui/x-ui
